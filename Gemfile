@@ -13,6 +13,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'activeadmin', '~> 1.1'
+gem 'active_admin_flat_skin'
+gem 'devise', '~> 4.3'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
