@@ -16,7 +16,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'activeadmin', '~> 1.1'
 gem 'active_admin_flat_skin'
 gem 'devise', '~> 4.3'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+gem 'haml', '~> 5.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
