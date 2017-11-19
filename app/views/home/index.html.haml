@@ -1,646 +1,447 @@
-%body
-  #preloader-blah
-  / top bar
-  .top-bar
-    .container
-      .row
-        .col-lg-6
-          %span
-            %i.ion-android-call
-            +01 555-555-555
-          %span
-            %i.ion-ios-email
-            info@bpress.com
-        .col-lg-6
-          %ul.list-inline.text-right.margin-btm-0
-            %li.list-inline-item
-              %a{:href => "#"}
-                %i.ion-social-facebook
-            %li.list-inline-item
-              %a{:href => "#"}
-                %i.ion-social-twitter
-            %li.list-inline-item
-              %a{:href => "#"}
-                %i.ion-social-googleplus
-            %li.list-inline-item
-              %a{:href => "#"}
-                %i.ion-social-linkedin
-            %li.list-inline-item
-              %a{:href => "#"}
-                %i.ion-social-instagram
-  / top bar end
-  / navbar
-  %nav.navbar.navbar-expand-lg.navbar-light.bg-white
-    .container
-      %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-        %span.navbar-toggler-icon
-      %a.navbar-brand{:href => "index.html"}
-        = image_tag 'logo.png'
-      #navbar.navbar-collapse.collapse
-        %ul.nav.navbar-nav.ml-auto
-          %li.dropdown.nav-item.active
-            %a.dropdown-toggle.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              Home
-              %span.caret
-            %ul.dropdown-menu.dropdown-menu-left
-              %li
-                %a.dropdown-item{:href => "index.html"} V1 - Default Slider
-              %li
-                %a.dropdown-item{:href => "index-static-img.html"} V2 - Static Image
-              %li
-                %a.dropdown-item{:href => "index-youtbe.html"} V3 - Youtube background
-              %li
-                %a.dropdown-item{:href => "index-onepage.html"} one  page
-              %li.dropdown-submenu
-                %a.dropdown-item{:href => "#", :tabindex => "-1"} headers
-                %ul.dropdown-menu
-                  %li
-                    %a.dropdown-item{:href => "index.html"} Default
-                  %li
-                    %a.dropdown-item{:href => "header-transparent.html"} Transparent
-                  %li
-                    %a.dropdown-item{:href => "header-sticky.html"} Sticky
-                  %li
-                    %a.dropdown-item{:href => "header-dark.html"} Dark
-                  %li.dropdown-submenu
-                    %a.dropdown-item{:href => "#", :tabindex => "-1"} menu level 2
-                    %ul.dropdown-menu
-                      %li
-                        %a.dropdown-item{:href => "#"} menu level 3
-                      %li
-                        %a.dropdown-item{:href => "#"} menu level 3
-          %li.nav-item
-            %a.nav-link{:href => "about.html"} About
-          %li.dropdown.nav-item
-            %a.dropdown-toggle.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              Projects
-              %span.caret
-            %ul.dropdown-menu.dropdown-menu-left
-              %li
-                %a.dropdown-item{:href => "projects-2col.html"} 2 Columns
-              %li
-                %a.dropdown-item{:href => "projects.html"} 3 Columns
-              %li
-                %a.dropdown-item{:href => "projects-4col.html"} 4 Columns
-              %li
-                %a.dropdown-item{:href => "projects-full-width.html"} Full width
-              %li
-                %a.dropdown-item{:href => "single-project.html"} Single Project
-          %li.dropdown.nav-item
-            %a.dropdown-toggle.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              Services
-              %span.caret
-            %ul.dropdown-menu.dropdown-menu-left
-              %li
-                %a.dropdown-item{:href => "service.html"} All Services
-              %li
-                %a.dropdown-item{:href => "renovation-service.html"} House renovation
-              %li
-                %a.dropdown-item{:href => "management-service.html"} Project management
-              %li
-                %a.dropdown-item{:href => "construction-service.html"} Construction
-              %li
-                %a.dropdown-item{:href => "interior-service.html"} Interior design
-          %li.dropdown.nav-item
-            %a.dropdown-toggle.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              Features
-              %span.caret
-            %ul.dropdown-menu.dropdown-menu-right
-              %li
-                %a.dropdown-item{:href => "typography.html"} Typography
-              %li
-                %a.dropdown-item{:href => "tabs.html"} Tabs
-              %li
-                %a.dropdown-item{:href => "accordoins.html"} Accordions
-              %li
-                %a.dropdown-item{:href => "grid-system.html"} Grid System
-          %li.dropdown.nav-item
-            %a.dropdown-toggle.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              Pages
-              %span.caret
-            %ul.dropdown-menu.dropdown-menu-right
-              %li
-                %a.dropdown-item{:href => "blog.html"} Blog
-              %li
-                %a.dropdown-item{:href => "post.html"} Blog Post
-              %li
-                %a.dropdown-item{:href => "contact.html"} Contact
-              %li
-                %a.dropdown-item{:href => "gallery.html"} Gallery
-              %li
-                %a.dropdown-item{:href => "error-404.html"} Error-404
-              %li
-                %a.dropdown-item{:href => "full-width.html"} Page Full Width
-              %li
-                %a.dropdown-item{:href => "page-right-sidebar.html"} Page Right Sidebar
-              %li
-                %a.dropdown-item{:href => "page-left-sidebar.html"} Page Left Sidebar
-          %li.search-toggle.nav-item
-            %a.nav-link{:href => "javascript:void(0)"}
-              %i.ion-search
-            %form.search-form
-              %input.form-control{:placeholder => "Search here...", :type => "text"}/
-              %button{:style => "display: none", :type => "submit"} Search
-      / /.nav-collapse
-    / /.container
-  / /nav
-  / start master slider
-  .clearfix
-  .slider-main{:style => "overflow: hidden;"}
-    / Master Slider
-    #masterslider.master-slider.ms-skin-default
-      / slide 1
-      .ms-slide.slide-1{"data-delay" => "14"}
-        / slide background
-        = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-1.jpg'
-        %h3.ms-layer.sub-title3.text-center.white.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px; top:200px;"} Bpress
-        %h3.ms-layer.title2.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px;top: 260px;"} Best Construction Template
-        %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:150px; top: 330px;"} Development dolor sit amet consectetur adipiscing Phasellus
-        %a.ms-layer.btn1{"data-delay" => "2500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 150px; top:380px;"}
-          Learn More
-          %i.ion-ios-arrow-right
-        %a.ms-layer.btn2{"data-delay" => "3000", "data-duration" => "2200", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 320px; top:380px;"}
-          Purchase Now!
-          %i.ion-ios-arrow-right
-      / end of slide
-      / slide 2
-      .ms-slide.slide-2{"data-delay" => "14"}
-        / slide background
-        = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-2.jpg'
-        %h3.ms-layer.sub-title3.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px; top:205px;"} We build
-        %h3.ms-layer.title2.text-uppercase{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px;top: 260px;"} Awesome projects
-        %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:110px; top:330px;"} Development dolor sit amet consectetur adipiscing Phasellus
-        %a.ms-layer.btn1{"data-delay" => "2500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left:110px; top:380px;"}
-          Learn More
-          %i.ion-ios-arrow-right
-        %a.ms-layer.btn2{"data-delay" => "3000", "data-duration" => "2200", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left:280px; top:380px;"}
-          Purchase Now!
-          %i.ion-ios-arrow-right
-      / end of slide
-      / slide 1
-      .ms-slide.slide-2{"data-delay" => "14"}
-        / slide background
-        = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-3.jpg'
-        %h3.ms-layer.sub-title2.full-wid.text-center.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0; top:200px;"} Interior  -  Construction  -  Renovation
-        %h3.ms-layer.title2.one.full-wid.font-sbold.white.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0;top: 250px;"} We offer Multi Services
-        %h5.ms-layer.sub-title2.full-wid.white.text-uppercase.text-center{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:0px; top: 330px;"} Development dolor sit amet consectetur adipiscing Phasellus
-        %a.ms-layer.btn1.uppercase{"data-delay" => "2500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 530px; top:380px;"}
-          Learn More
-          %i.ion-ios-arrow-right
-        %a.ms-layer.btn2.uppercase{"data-delay" => "3000", "data-duration" => "2200", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 700px; top:380px;"}
-          Purchase Now!
-          %i.ion-ios-arrow-right
-      / end of slide
-  / end Master Slider
-  / call to action
-  .cta
-    .container
-      .row
-        .col-lg-9.wow.animated.fadeInDown{"data-wow-delay" => "0.2s"}
-          %h3 Do you need Professionals to build your dream home?
-          %p We offer the best home services lorem ipsum dolor sit amet
-        .col-lg-3.text-center.wow.animated.fadeInUp{"data-wow-delay" => "0.4s"}
-          %a.btn.btn-skin.btn-xl{:href => "#"}
-            Contact us
-            %i.ion-em
-  / end call to action
-  .space80
+/ top bar
+.top-bar
   .container
-    .row.vertical-align-child
-      .col-lg-5.hidden-xs.wow.animated.fadeInUp{"data-wow-delay" => "0.3s"}
-        = image_tag 'single-1.png', class: 'img-fluid'
-      .col-lg-6.ml-auto.wow.animated.fadeInUp{"data-wow-delay" => "0.6s"}
-        %h1
-          We are
-          %span.color_text PASSIONATE
-          about our work
-        .border-width
-        %p
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        %hr/
-        .buttons
-          %a.btn.btn-xl.btn-skin{:href => "#"} Our Services
-          %a.btn.btn-xl.btn-dark{:href => "#"} Contact Us
-    .space40
     .row
-      .col-lg-4.margin-btm-30.text-center
-        .icon-box.clearfix.wow.animated.fadeIn{"data-wow-delay" => "0.3s"}
-          %i.flaticon-excavator-machine-arm
-          .content
-            %h4.text-uppercase 15 Years of experience
-            .border-width
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      / end col
-      .col-lg-4.margin-btm-30.text-center
-        .icon-box.clearfix.wow.animated.fadeIn{"data-wow-delay" => "0.6s"}
-          %i.flaticon-construction-crane-machine-1
-          .content
-            %h4.text-uppercase Professionals
-            .border-width
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      / end col
-      .col-lg-4.margin-btm-30.text-center
-        .icon-box.clearfix.wow.animated.fadeIn{"data-wow-delay" => "0.9s"}
-          %i.flaticon-construction-excavator
-          .content
-            %h4.text-uppercase Modern Technologies
-            .border-width
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      / end col
-  / end intro section
-  .space50
-  .gray-bg
-    .space80
-    .container
-      .center-title.margin-btm-50
-        %h1 What We offer
-        .border-width.center-align
-      / center title end
-      .owl-carousel.owl-theme.service-slider
-        .item
-          .service-box
-            .service-thumb
-              %a{:href => "#"}
-                = image_tag 's1.jpg', class: 'img-fluid'
-            .service-desc
-              %h4.text-uppercase Interior Design
-              .border-width
-              %p
-                Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              .text-right
-                %a.btn.btn-link{:href => "#"} View Details
-        / services col end
-        .item
-          .service-box
-            .service-thumb
-              %a{:href => "#"}
-                = image_tag 's2.jpg', class: 'img-fluid'
-            .service-desc
-              %h4.text-uppercase Project Management
-              .border-width
-              %p
-                Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              .text-right
-                %a.btn.btn-link{:href => "#"} View Details
-        / services col end
-        .item
-          .service-box
-            .service-thumb
-              %a{:href => "#"}
-                = image_tag 's3.jpg', class: 'img-fluid'
-            .service-desc
-              %h4.text-uppercase House Renovation
-              .border-width
-              %p
-                Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              .text-right
-                %a.btn.btn-link{:href => "#"} View Details
-        / services col end
-        .item
-          .service-box
-            .service-thumb
-              %a{:href => "#"}
-                = image_tag 's4.jpg', class: 'img-fluid'
-            .service-desc
-              %h4.text-uppercase Constructions
-              .border-width
-              %p
-                Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              .text-right
-                %a.btn.btn-link{:href => "#"} View Details
-        / services col end
-      / services row end
-    .space50
-    .text-center
-      %a.btn.btn-xl.btn-skin{:href => "#"}
-        View All Services
-        %i.ion-android-arrow-forward
-    .space80
-  / end gray bg with services
-
-  -# TODO: Add if Projects needed
-  -#.space80
-  -#.container
-  -#  .row
-  -#    .col-lg-12
-  -#      .center-title.margin-btm-50
-  -#        %h1 Recent Projects
-  -#        .border-width.center-align
-  -#.container
-  -#  #js-filters-agency.cbp-l-filters-text
-  -#    .cbp-l-filters-text-sort Sort by:
-  -#    .cbp-filter-item-active.cbp-filter-item{"data-filter" => "*"}
-  -#      All
-  -#      .cbp-filter-counter
-  -#    |
-  -#    .cbp-filter-item{"data-filter" => ".interior"}
-  -#      Interior
-  -#      .cbp-filter-counter
-  -#    |
-  -#    .cbp-filter-item{"data-filter" => ".renovation"}
-  -#      Renovation
-  -#      .cbp-filter-counter
-  -#    |
-  -#    .cbp-filter-item{"data-filter" => ".management"}
-  -#      Management
-  -#      .cbp-filter-counter
-  -#    |
-  -#    .cbp-filter-item{"data-filter" => ".construction"}
-  -#      Construction
-  -#      .cbp-filter-counter
-  -#  / filter
-  -##js-grid-agency.cbp.cbp-l-grid-agency
-  -#  .cbp-item.interior
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-1.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-1.jpg'
-  -#      .cbp-l-grid-agency-title Interior
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#  .cbp-item.renovation
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-2.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-2.jpg'
-  -#      .cbp-l-grid-agency-title Renovation
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#  .cbp-item.management
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-3.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-3.jpg'
-  -#      .cbp-l-grid-agency-title Project Management
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#  .cbp-item.construction
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-4.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-4.jpg'
-  -#      .cbp-l-grid-agency-title Construction
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#  .cbp-item.interior
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-5.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-5.jpg'
-  -#      .cbp-l-grid-agency-title Interior
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#  .cbp-item.renovation
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-6.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-6.jpg'
-  -#      .cbp-l-grid-agency-title Renovation
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#  .cbp-item.management
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-7.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-7.jpg'
-  -#      .cbp-l-grid-agency-title Project Management
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#  .cbp-item.construction
-  -#    %a{:href => "#"}
-  -#      .cbp-caption
-  -#        .cbp-caption-defaultWrap
-  -#          = image_tag 'work-8.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-8.jpg'
-  -#      .cbp-l-grid-agency-title Construction
-  -#      .cbp-l-grid-agency-desc By Bpress Construction
-  -#  / end item
-  -#
-  -#.space50
-  -#.text-center.container
-  -#  %a.btn.btn-xl.btn-dark{:href => "#"}
-  -#    View All Projects
-  -#    %i.ion-android-arrow-forward
-  -#.space80
-
+      .col-lg-6
+        %span
+          %i.ion-android-call
+          +01 555-555-555
+        %span
+          %i.ion-ios-email
+          info@bpress.com
+      .col-lg-6
+        %ul.list-inline.text-right.margin-btm-0
+          %li.list-inline-item
+            %a{:href => "#"}
+              %i.ion-social-facebook
+          %li.list-inline-item
+            %a{:href => "#"}
+              %i.ion-social-twitter
+          %li.list-inline-item
+            %a{:href => "#"}
+              %i.ion-social-googleplus
+          %li.list-inline-item
+            %a{:href => "#"}
+              %i.ion-social-linkedin
+          %li.list-inline-item
+            %a{:href => "#"}
+              %i.ion-social-instagram
+/ top bar end
+/ navbar
+%nav.navbar.navbar-expand-lg.navbar-light.bg-white
   .container
-    .row.vertical-align-child
-      .col-lg-6.wow.animated.fadeInUp{"data-wow-delay" => "0.2s"}
-        .space30
-        %h3.left-title Why Choose us?
-        #accordion{:role => "tablist"}
-          .card.accordions-light
-            #headingOne.card-header{:role => "tab"}
-              %h5.mb-0
-                %a{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-toggle" => "collapse", :href => "#collapseOne"}
-                  Latest Bootstrap4
-            #collapseOne.collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#accordion", :role => "tabpanel"}
-              .card-body
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          .card.accordions-light
-            #headingTwo.card-header{:role => "tab"}
-              %h5.mb-0
-                %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseTwo"}
-                  Clean &amp; well coded
-            #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordion", :role => "tabpanel"}
-              .card-body
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          .card.accordions-light
-            #headingThree.card-header{:role => "tab"}
-              %h5.mb-0
-                %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseThree"}
-                  Minimal to large
-            #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordion", :role => "tabpanel"}
-              .card-body
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        .space30
-      .col-lg-6.wow.animated.fadeIn{"data-wow-delay" => "0.4s"}
-        = image_tag 'single-2.png', class: 'img-fluid hidden-xs'
-
-  .testimonials
-    .container
-      .center-title.margin-btm-50
-        %h1 What they say
-        .border-width.center-align
-      .row
-        .col-lg-8.mr-auto.ml-auto.text-center
-          .testi-slider.owl-carousel.owl-theme
-            .item
-              %i.ion-quote
-              %p
-                " We are so happy working with Bpress, the guys are very familiar and work with passionate, services are absolutely awesome, highly recommended. "
-              %h5 John Doe
-            .item
-              %i.ion-quote
-              %p
-                " We are so happy working with Bpress, the guys are very familiar and work with passionate, services are absolutely awesome, highly recommended. "
-              %h5 John Doe
-            .item
-              %i.ion-quote
-              %p
-                " We are so happy working with Bpress, the guys are very familiar and work with passionate, services are absolutely awesome, highly recommended. "
-              %h5 John Doe
-  / end testimonials
+    %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    %a.navbar-brand{:href => "index.html"}
+      = image_tag 'logo.png'
+    #navbar.navbar-collapse.collapse
+      %ul.nav.navbar-nav.ml-auto
+        %li.nav-item
+          %a.nav-link{:href => "#"} About
+        %li.nav-item
+          %a.nav-link{:href => "#"} Services
+        %li.nav-item
+          %a.nav-link{:href => "#"} Testimonials
+        %li.nav-item
+          %a.nav-link{:href => "#"} Company News
+        %li.nav-item
+          %a.nav-link{:href => "#"} Contact
+    / /.nav-collapse
+  / /.container
+/ /nav
+/ start master slider
+.clearfix
+.slider-main{:style => "overflow: hidden;"}
+  / Master Slider
+  #masterslider.master-slider.ms-skin-default
+    / slide 1
+    .ms-slide.slide-1{"data-delay" => "14"}
+      / slide background
+      = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-1.jpg'
+      %h3.ms-layer.sub-title3.text-center.white.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px; top:200px;"} Bpress
+      %h3.ms-layer.title2.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px;top: 260px;"} Best Construction Template
+      %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:150px; top: 330px;"} Development dolor sit amet consectetur adipiscing Phasellus
+      %a.ms-layer.btn1{"data-delay" => "2500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 150px; top:380px;"}
+        Learn More
+        %i.ion-ios-arrow-right
+      %a.ms-layer.btn2{"data-delay" => "3000", "data-duration" => "2200", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 320px; top:380px;"}
+        Purchase Now!
+        %i.ion-ios-arrow-right
+    / end of slide
+    / slide 2
+    .ms-slide.slide-2{"data-delay" => "14"}
+      / slide background
+      = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-2.jpg'
+      %h3.ms-layer.sub-title3.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px; top:205px;"} We build
+      %h3.ms-layer.title2.text-uppercase{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px;top: 260px;"} Awesome projects
+      %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:110px; top:330px;"} Development dolor sit amet consectetur adipiscing Phasellus
+      %a.ms-layer.btn1{"data-delay" => "2500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left:110px; top:380px;"}
+        Learn More
+        %i.ion-ios-arrow-right
+      %a.ms-layer.btn2{"data-delay" => "3000", "data-duration" => "2200", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left:280px; top:380px;"}
+        Purchase Now!
+        %i.ion-ios-arrow-right
+    / end of slide
+    / slide 1
+    .ms-slide.slide-2{"data-delay" => "14"}
+      / slide background
+      = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-3.jpg'
+      %h3.ms-layer.sub-title2.full-wid.text-center.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0; top:200px;"} Interior  -  Construction  -  Renovation
+      %h3.ms-layer.title2.one.full-wid.font-sbold.white.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0;top: 250px;"} We offer Multi Services
+      %h5.ms-layer.sub-title2.full-wid.white.text-uppercase.text-center{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:0px; top: 330px;"} Development dolor sit amet consectetur adipiscing Phasellus
+      %a.ms-layer.btn1.uppercase{"data-delay" => "2500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 530px; top:380px;"}
+        Learn More
+        %i.ion-ios-arrow-right
+      %a.ms-layer.btn2.uppercase{"data-delay" => "3000", "data-duration" => "2200", "data-ease" => "easeOutExpo", "data-effect" => "scale(1.5,1.6)", "data-type" => "text", :href => "#", :style => "left: 700px; top:380px;"}
+        Purchase Now!
+        %i.ion-ios-arrow-right
+    / end of slide
+/ end Master Slider
+/ call to action
+.cta
+  .container
+    .row
+      .col-lg-9.wow.animated.fadeInDown{"data-wow-delay" => "0.2s"}
+        %h3 Do you need Professionals to build your dream home?
+        %p We offer the best home services lorem ipsum dolor sit amet
+      .col-lg-3.text-center.wow.animated.fadeInUp{"data-wow-delay" => "0.4s"}
+        %a.btn.btn-skin.btn-xl{:href => "#"}
+          Contact us
+          %i.ion-em
+/ end call to action
+.space80
+.container
+  .row.vertical-align-child
+    .col-lg-5.hidden-xs.wow.animated.fadeInUp{"data-wow-delay" => "0.3s"}
+      = image_tag 'single-1.png', class: 'img-fluid'
+    .col-lg-6.ml-auto.wow.animated.fadeInUp{"data-wow-delay" => "0.6s"}
+      %h1
+        We are
+        %span.color_text PASSIONATE
+        about our work
+      .border-width
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      %hr/
+      .buttons
+        %a.btn.btn-xl.btn-skin{:href => "#"} Our Services
+        %a.btn.btn-xl.btn-dark{:href => "#"} Contact Us
+  .space40
+  .row
+    .col-lg-4.margin-btm-30.text-center
+      .icon-box.clearfix.wow.animated.fadeIn{"data-wow-delay" => "0.3s"}
+        %i.flaticon-excavator-machine-arm
+        .content
+          %h4.text-uppercase 15 Years of experience
+          .border-width
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    / end col
+    .col-lg-4.margin-btm-30.text-center
+      .icon-box.clearfix.wow.animated.fadeIn{"data-wow-delay" => "0.6s"}
+        %i.flaticon-construction-crane-machine-1
+        .content
+          %h4.text-uppercase Professionals
+          .border-width
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    / end col
+    .col-lg-4.margin-btm-30.text-center
+      .icon-box.clearfix.wow.animated.fadeIn{"data-wow-delay" => "0.9s"}
+        %i.flaticon-construction-excavator
+        .content
+          %h4.text-uppercase Modern Technologies
+          .border-width
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    / end col
+/ end intro section
+.space50
+.gray-bg
   .space80
   .container
     .center-title.margin-btm-50
-      %h1 Company News
+      %h1 What We offer
+      .border-width.center-align
+    / center title end
+    .owl-carousel.owl-theme.service-slider
+      .item
+        .service-box
+          .service-thumb
+            %a{:href => "#"}
+              = image_tag 's1.jpg', class: 'img-fluid'
+          .service-desc
+            %h4.text-uppercase Interior Design
+            .border-width
+            %p
+              Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            .text-right
+              %a.btn.btn-link{:href => "#"} View Details
+      / services col end
+      .item
+        .service-box
+          .service-thumb
+            %a{:href => "#"}
+              = image_tag 's2.jpg', class: 'img-fluid'
+          .service-desc
+            %h4.text-uppercase Project Management
+            .border-width
+            %p
+              Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            .text-right
+              %a.btn.btn-link{:href => "#"} View Details
+      / services col end
+      .item
+        .service-box
+          .service-thumb
+            %a{:href => "#"}
+              = image_tag 's3.jpg', class: 'img-fluid'
+          .service-desc
+            %h4.text-uppercase House Renovation
+            .border-width
+            %p
+              Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            .text-right
+              %a.btn.btn-link{:href => "#"} View Details
+      / services col end
+      .item
+        .service-box
+          .service-thumb
+            %a{:href => "#"}
+              = image_tag 's4.jpg', class: 'img-fluid'
+          .service-desc
+            %h4.text-uppercase Constructions
+            .border-width
+            %p
+              Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            .text-right
+              %a.btn.btn-link{:href => "#"} View Details
+      / services col end
+    / services row end
+  .space50
+  .text-center
+    %a.btn.btn-xl.btn-skin{:href => "#"}
+      View All Services
+      %i.ion-android-arrow-forward
+  .space80
+/ end gray bg with services
+
+.container
+  .row.vertical-align-child
+    .col-lg-6.wow.animated.fadeInUp{"data-wow-delay" => "0.2s"}
+      .space30
+      %h3.left-title Why Choose us?
+      #accordion{:role => "tablist"}
+        .card.accordions-light
+          #headingOne.card-header{:role => "tab"}
+            %h5.mb-0
+              %a{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-toggle" => "collapse", :href => "#collapseOne"}
+                Latest Bootstrap4
+          #collapseOne.collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#accordion", :role => "tabpanel"}
+            .card-body
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        .card.accordions-light
+          #headingTwo.card-header{:role => "tab"}
+            %h5.mb-0
+              %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseTwo"}
+                Clean &amp; well coded
+          #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordion", :role => "tabpanel"}
+            .card-body
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        .card.accordions-light
+          #headingThree.card-header{:role => "tab"}
+            %h5.mb-0
+              %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseThree"}
+                Minimal to large
+          #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordion", :role => "tabpanel"}
+            .card-body
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      .space30
+    .col-lg-6.wow.animated.fadeIn{"data-wow-delay" => "0.4s"}
+      = image_tag 'single-2.png', class: 'img-fluid hidden-xs'
+
+.testimonials
+  .container
+    .center-title.margin-btm-50
+      %h1 What they say
       .border-width.center-align
     .row
-      .col-lg-9.margin-btm-30
-        .row
-          .col-lg-6
-            .post.wow.animated.fadeInUp{"data-wow-delay" => "0.2s"}
-              %a{:href => "post.html"}
-                = image_tag 's1.jpg', class: 'img-fluid'
-              .space20
-              .post-meta
-                %h4
-                  %a{:href => "#"} Post Title goes here
-                %ul.list-inline
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-person
-                      User
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-ios-clock
-                      12 May 2016
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-ios-chatbubble
-                      3 Comments
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-pound
-                      Interior
-              / post meta
-              .post-content
-                %p
-                  If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation
-                %p.text-right
-                  %a.btn.btn-link{:href => "#"} Read More...
-            / post end
-          .col-lg-6
-            .post.wow.animated.fadeInUp{"data-wow-delay" => "0.4s"}
-              %a{:href => "post.html"}
-                = image_tag 's2.jpg', class: 'img-fluid'
-              .space20
-              .post-meta
-                %h4
-                  %a{:href => "#"} Post Title goes here
-                %ul.list-inline
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-person
-                      User
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-ios-clock
-                      12 May 2016
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-ios-chatbubble
-                      3 Comments
-                  %li.list-inline-item
-                    %a{:href => "#"}
-                      %i.ion-pound
-                      Interior
-              / post meta
-              .post-content
-                %p
-                  If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation
-                %p.text-right
-                  %a.btn.btn-link{:href => "#"} Read More...
-            / post end
-      .col-lg-3
-        %ul.card-list.list-unstyled.wow.animated.fadeInUp{"data-wow-delay" => "0.6s"}
-          %li
-            %a{:href => "post.html"}
-              %h4 Voluptate velit esse quam nihil molestiae consequatur
-              %span
-                2 Days Ago
-                %em Interior
-          %li
-            %a{:href => "post.html"}
-              %h4 What the estimate time of house painting.
-              %span
-                2 Days Ago
-                %em Interior
-          %li
-            %a{:href => "post.html"}
-              %h4 Voluptate velit esse quam nihil molestiae consequatur
-              %span
-                2 Days Ago
-                %em Interior
-          %li
-            %a.btn.btn-link{:href => "blog.html"}
-              Read All news
-  .space50
-  .c_info_bar.wow.animated.fadeIn{"data-wow-delay" => "0.3s"}
-    .container
-      .row
-        .col-lg-12.text-center.margin-btm-30
-          %h4
-            %i.ion-ios-time
-            Monday - Saturday 9:Am - 6:Pm / Sunday: Closed
-  / footer
-  %footer.footer
-    .container
-      .row
-        .col-lg-4.margin-btm-30
-          %a{:href => "index.html"}
-            = image_tag 'logo-light.png'
-          .space30
-          %p
-            Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          %a.btn.btn-link{:href => "#"} Read More
-        .col-lg-3.margin-btm-30
-          %h3 Our Services
-          %ul.list-unstyled
-            %li
-              %a{:href => "#"} Interior Designs
-            %li
-              %a{:href => "#"} Project Management
-            %li
-              %a{:href => "#"} House Renovation
-            %li
-              %a{:href => "#"} Constructions
-        .col-lg-5
-          %h3 Latest Projects
-          .latest-projects
-            %a{:href => "#"}
-              = image_tag 'work-1.jpg', class: 'img-fluid'
-            %a{:href => "#"}
-              = image_tag 'work-2.jpg', class: 'img-fluid'
-            %a{:href => "#"}
-              = image_tag 'work-3.jpg', class: 'img-fluid'
-            %a{:href => "#"}
-              = image_tag 'work-4.jpg', class: 'img-fluid'
-            %a{:href => "#"}
-              = image_tag 'work-5.jpg', class: 'img-fluid'
-            %a{:href => "#"}
-              = image_tag 'work-6.jpg', class: 'img-fluid'
-      %hr/
+      .col-lg-8.mr-auto.ml-auto.text-center
+        .testi-slider.owl-carousel.owl-theme
+          .item
+            %i.ion-quote
+            %p
+              " We are so happy working with Bpress, the guys are very familiar and work with passionate, services are absolutely awesome, highly recommended. "
+            %h5 John Doe
+          .item
+            %i.ion-quote
+            %p
+              " We are so happy working with Bpress, the guys are very familiar and work with passionate, services are absolutely awesome, highly recommended. "
+            %h5 John Doe
+          .item
+            %i.ion-quote
+            %p
+              " We are so happy working with Bpress, the guys are very familiar and work with passionate, services are absolutely awesome, highly recommended. "
+            %h5 John Doe
+/ end testimonials
+.space80
+.container
+  .center-title.margin-btm-50
+    %h1 Company News
+    .border-width.center-align
+  .row
+    .col-lg-9.margin-btm-30
       .row
         .col-lg-6
-          %ul.list-inline
-            %li.list-inline-item
-              %a{:href => "#"} Home
-            %li.list-inline-item
-              %a{:href => "#"} About
-            %li.list-inline-item
-              %a{:href => "#"} Services
-            %li.list-inline-item
-              %a{:href => "#"} Blog
-            %li.list-inline-item
-              %a{:href => "#"} Terms &amp; Conditions
-        .col-lg-5.text-right
-          %span © 2017. All Right Reserved. Bpress
-  / footer end
-  / back to top
-  %a.scrollToTop{:href => "#"}
-    %i.ion-android-arrow-dropup-circle
-  / back to top end
+          .post.wow.animated.fadeInUp{"data-wow-delay" => "0.2s"}
+            %a{:href => "post.html"}
+              = image_tag 's1.jpg', class: 'img-fluid'
+            .space20
+            .post-meta
+              %h4
+                %a{:href => "#"} Post Title goes here
+              %ul.list-inline
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-person
+                    User
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-ios-clock
+                    12 May 2016
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-ios-chatbubble
+                    3 Comments
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-pound
+                    Interior
+            / post meta
+            .post-content
+              %p
+                If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation
+              %p.text-right
+                %a.btn.btn-link{:href => "#"} Read More...
+          / post end
+        .col-lg-6
+          .post.wow.animated.fadeInUp{"data-wow-delay" => "0.4s"}
+            %a{:href => "post.html"}
+              = image_tag 's2.jpg', class: 'img-fluid'
+            .space20
+            .post-meta
+              %h4
+                %a{:href => "#"} Post Title goes here
+              %ul.list-inline
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-person
+                    User
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-ios-clock
+                    12 May 2016
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-ios-chatbubble
+                    3 Comments
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.ion-pound
+                    Interior
+            / post meta
+            .post-content
+              %p
+                If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation
+              %p.text-right
+                %a.btn.btn-link{:href => "#"} Read More...
+          / post end
+    .col-lg-3
+      %ul.card-list.list-unstyled.wow.animated.fadeInUp{"data-wow-delay" => "0.6s"}
+        %li
+          %a{:href => "post.html"}
+            %h4 Voluptate velit esse quam nihil molestiae consequatur
+            %span
+              2 Days Ago
+              %em Interior
+        %li
+          %a{:href => "post.html"}
+            %h4 What the estimate time of house painting.
+            %span
+              2 Days Ago
+              %em Interior
+        %li
+          %a{:href => "post.html"}
+            %h4 Voluptate velit esse quam nihil molestiae consequatur
+            %span
+              2 Days Ago
+              %em Interior
+        %li
+          %a.btn.btn-link{:href => "blog.html"}
+            Read All news
+.space50
+.c_info_bar.wow.animated.fadeIn{"data-wow-delay" => "0.3s"}
+  .container
+    .row
+      .col-lg-12.text-center.margin-btm-30
+        %h4
+          %i.ion-ios-time
+          Monday - Saturday 9:Am - 6:Pm / Sunday: Closed
+/ footer
+%footer.footer
+  .container
+    .row
+      .col-lg-4.margin-btm-30
+        %a{:href => "index.html"}
+          = image_tag 'logo-light.png'
+        .space30
+        %p
+          Sed ut perspiciatis unde omnis doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        %a.btn.btn-link{:href => "#"} Read More
+      .col-lg-3.margin-btm-30
+        %h3 Our Services
+        %ul.list-unstyled
+          %li
+            %a{:href => "#"} Interior Designs
+          %li
+            %a{:href => "#"} Project Management
+          %li
+            %a{:href => "#"} House Renovation
+          %li
+            %a{:href => "#"} Constructions
+      .col-lg-5
+        %h3 Latest Projects
+        .latest-projects
+          %a{:href => "#"}
+            = image_tag 'work-1.jpg', class: 'img-fluid'
+          %a{:href => "#"}
+            = image_tag 'work-2.jpg', class: 'img-fluid'
+          %a{:href => "#"}
+            = image_tag 'work-3.jpg', class: 'img-fluid'
+          %a{:href => "#"}
+            = image_tag 'work-4.jpg', class: 'img-fluid'
+          %a{:href => "#"}
+            = image_tag 'work-5.jpg', class: 'img-fluid'
+          %a{:href => "#"}
+            = image_tag 'work-6.jpg', class: 'img-fluid'
+    %hr/
+    .row
+      .col-lg-6
+        %ul.list-inline
+          %li.list-inline-item
+            %a{:href => "#"} Home
+          %li.list-inline-item
+            %a{:href => "#"} About
+          %li.list-inline-item
+            %a{:href => "#"} Services
+          %li.list-inline-item
+            %a{:href => "#"} Blog
+          %li.list-inline-item
+            %a{:href => "#"} Terms &amp; Conditions
+      .col-lg-5.text-right
+        %span © 2017. All Right Reserved. Bpress
+/ footer end
+/ back to top
+%a.scrollToTop{:href => "#"}
+  %i.ion-android-arrow-dropup-circle
+/ back to top end

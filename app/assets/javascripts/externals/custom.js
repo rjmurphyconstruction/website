@@ -3,13 +3,6 @@
  */
 
 $(document).ready(function () {
-
-// site preloader -- also uncomment the div in the header and the css style for #preloader
-  $(window).on('load', function () {
-    $('#preloader').fadeOut('slow', function () {
-      $(this).remove();
-    });
-  });
   //animated scroll menu
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -19,11 +12,6 @@ $(document).ready(function () {
     if (scroll <= 0) {
       $('.navbar-sticky').removeClass('is-stick');
     }
-  });
-
-// search form toggle
-  $(".search-toggle a").click(function () {
-    $(".search-form").slideToggle();
   });
 
   //back to top
@@ -59,24 +47,8 @@ $(document).ready(function () {
       }
     }
   });
-  //Projct carousel
-  $(".project-slider").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1000: {
-        items: 3
-      }
-    }
-  });
-  //Projct carousel
+
+  //Testimonial carousel
   $(".testi-slider").owlCarousel({
     loop: true,
     margin: 0,
