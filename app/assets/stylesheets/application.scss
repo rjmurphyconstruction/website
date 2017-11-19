@@ -15,7 +15,17 @@
 
 @import 'bootstrap';
 
+// External Libraries for bp-theme
 @import 'externals/animate';
 @import 'externals/ionicons';
+@import 'externals/flaticon';
+@import 'externals/owl.carousel.min';
+@import 'externals/owl.theme.default.min';
+@import 'externals/masterslider';
+@import 'externals/masterslide-style';
+@import 'externals/cubeportfolio.min';
+@import 'externals/dzsparallaxer';
+@import 'externals/style';
 
+// bp-theme base styles
 @import 'base/style';

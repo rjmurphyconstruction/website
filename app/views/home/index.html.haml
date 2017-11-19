@@ -1,5 +1,5 @@
 %body
-  #preloader
+  #preloader-blah
   / top bar
   .top-bar
     .container
@@ -152,7 +152,7 @@
       / slide 1
       .ms-slide.slide-1{"data-delay" => "14"}
         / slide background
-        %img{:alt => "Slide1 background", "data-src" => "images/bg-1.jpg", :src => "masterslider/style/blank.gif"}/
+        = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-1.jpg'
         %h3.ms-layer.sub-title3.text-center.white.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px; top:200px;"} Bpress
         %h3.ms-layer.title2.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px;top: 260px;"} Best Construction Template
         %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:150px; top: 330px;"} Development dolor sit amet consectetur adipiscing Phasellus
@@ -166,7 +166,7 @@
       / slide 2
       .ms-slide.slide-2{"data-delay" => "14"}
         / slide background
-        %img{:alt => "Slide1 background", "data-src" => "images/bg-2.jpg", :src => "masterslider/style/blank.gif"}/
+        = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-2.jpg'
         %h3.ms-layer.sub-title3.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px; top:205px;"} We build
         %h3.ms-layer.title2.text-uppercase{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px;top: 260px;"} Awesome projects
         %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:110px; top:330px;"} Development dolor sit amet consectetur adipiscing Phasellus
@@ -180,7 +180,7 @@
       / slide 1
       .ms-slide.slide-2{"data-delay" => "14"}
         / slide background
-        %img{:alt => "Slide1 background", "data-src" => "images/bg-3.jpg", :src => "masterslider/style/blank.gif"}/
+        = image_tag 'blank.gif', alt: 'Slide1 background', 'data-src' => 'bg-3.jpg'
         %h3.ms-layer.sub-title2.full-wid.text-center.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0; top:200px;"} Interior  -  Construction  -  Renovation
         %h3.ms-layer.title2.one.full-wid.font-sbold.white.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0;top: 250px;"} We offer Multi Services
         %h5.ms-layer.sub-title2.full-wid.white.text-uppercase.text-center{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:0px; top: 330px;"} Development dolor sit amet consectetur adipiscing Phasellus
@@ -208,7 +208,7 @@
   .container
     .row.vertical-align-child
       .col-lg-5.hidden-xs.wow.animated.fadeInUp{"data-wow-delay" => "0.3s"}
-        %img.img-fluid{:alt => "", :src => "images/single-1.png"}/
+        = image_tag 'single-1.png', class: 'img-fluid'
       .col-lg-6.ml-auto.wow.animated.fadeInUp{"data-wow-delay" => "0.6s"}
         %h1
           We are
@@ -320,141 +320,145 @@
         %i.ion-android-arrow-forward
     .space80
   / end gray bg with services
-  .space80
+
+  -# TODO: Add if Projects needed
+  -#.space80
+  -#.container
+  -#  .row
+  -#    .col-lg-12
+  -#      .center-title.margin-btm-50
+  -#        %h1 Recent Projects
+  -#        .border-width.center-align
+  -#.container
+  -#  #js-filters-agency.cbp-l-filters-text
+  -#    .cbp-l-filters-text-sort Sort by:
+  -#    .cbp-filter-item-active.cbp-filter-item{"data-filter" => "*"}
+  -#      All
+  -#      .cbp-filter-counter
+  -#    |
+  -#    .cbp-filter-item{"data-filter" => ".interior"}
+  -#      Interior
+  -#      .cbp-filter-counter
+  -#    |
+  -#    .cbp-filter-item{"data-filter" => ".renovation"}
+  -#      Renovation
+  -#      .cbp-filter-counter
+  -#    |
+  -#    .cbp-filter-item{"data-filter" => ".management"}
+  -#      Management
+  -#      .cbp-filter-counter
+  -#    |
+  -#    .cbp-filter-item{"data-filter" => ".construction"}
+  -#      Construction
+  -#      .cbp-filter-counter
+  -#  / filter
+  -##js-grid-agency.cbp.cbp-l-grid-agency
+  -#  .cbp-item.interior
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-1.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-1.jpg'
+  -#      .cbp-l-grid-agency-title Interior
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#  .cbp-item.renovation
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-2.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-2.jpg'
+  -#      .cbp-l-grid-agency-title Renovation
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#  .cbp-item.management
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-3.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-3.jpg'
+  -#      .cbp-l-grid-agency-title Project Management
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#  .cbp-item.construction
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-4.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-4.jpg'
+  -#      .cbp-l-grid-agency-title Construction
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#  .cbp-item.interior
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-5.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-5.jpg'
+  -#      .cbp-l-grid-agency-title Interior
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#  .cbp-item.renovation
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-6.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-6.jpg'
+  -#      .cbp-l-grid-agency-title Renovation
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#  .cbp-item.management
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-7.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-7.jpg'
+  -#      .cbp-l-grid-agency-title Project Management
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#  .cbp-item.construction
+  -#    %a{:href => "#"}
+  -#      .cbp-caption
+  -#        .cbp-caption-defaultWrap
+  -#          = image_tag 'work-8.jpg', height: 250, width: 380, 'data-cbp-src' => 'work-8.jpg'
+  -#      .cbp-l-grid-agency-title Construction
+  -#      .cbp-l-grid-agency-desc By Bpress Construction
+  -#  / end item
+  -#
+  -#.space50
+  -#.text-center.container
+  -#  %a.btn.btn-xl.btn-dark{:href => "#"}
+  -#    View All Projects
+  -#    %i.ion-android-arrow-forward
+  -#.space80
+
   .container
-    .row
-      .col-lg-12
-        .center-title.margin-btm-50
-          %h1 Recent Projects
-          .border-width.center-align
-  .container
-    #js-filters-agency.cbp-l-filters-text
-      .cbp-l-filters-text-sort Sort by:
-      .cbp-filter-item-active.cbp-filter-item{"data-filter" => "*"}
-        All
-        .cbp-filter-counter
-      |
-      .cbp-filter-item{"data-filter" => ".interior"}
-        Interior
-        .cbp-filter-counter
-      |
-      .cbp-filter-item{"data-filter" => ".renovation"}
-        Renovation
-        .cbp-filter-counter
-      |
-      .cbp-filter-item{"data-filter" => ".management"}
-        Management
-        .cbp-filter-counter
-      |
-      .cbp-filter-item{"data-filter" => ".construction"}
-        Construction
-        .cbp-filter-counter
-    / filter
-  #js-grid-agency.cbp.cbp-l-grid-agency
-    .cbp-item.interior
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-1.jpg", :height => "250", :src => "images/work-1.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Interior
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-    .cbp-item.renovation
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-2.jpg", :height => "250", :src => "images/work-2.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Renovation
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-    .cbp-item.management
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-3.jpg", :height => "250", :src => "images/work-3.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Project Management
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-    .cbp-item.construction
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-4.jpg", :height => "250", :src => "images/work-4.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Construction
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-    .cbp-item.interior
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-5.jpg", :height => "250", :src => "images/work-5.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Interior
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-    .cbp-item.renovation
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-6.jpg", :height => "250", :src => "images/work-6.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Renovation
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-    .cbp-item.management
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-7.jpg", :height => "250", :src => "images/work-7.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Project Management
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-    .cbp-item.construction
-      %a{:href => "#"}
-        .cbp-caption
-          .cbp-caption-defaultWrap
-            %img{:alt => "", "data-cbp-src" => "images/work-8.jpg", :height => "250", :src => "images/work-8.jpg", :width => "380"}/
-        .cbp-l-grid-agency-title Construction
-        .cbp-l-grid-agency-desc By Bpress Construction
-    / end item
-  .space50
-  .text-center.container
-    %a.btn.btn-xl.btn-dark{:href => "#"}
-      View All Projects
-      %i.ion-android-arrow-forward
-  .space80
-  .gray-bg
-    .container
-      .row.vertical-align-child
-        .col-lg-6.wow.animated.fadeInUp{"data-wow-delay" => "0.2s"}
-          .space30
-          %h3.left-title Why Choose us?
-          #accordion{:role => "tablist"}
-            .card.accordions-light
-              #headingOne.card-header{:role => "tab"}
-                %h5.mb-0
-                  %a{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-toggle" => "collapse", :href => "#collapseOne"}
-                    Latest Bootstrap4
-              #collapseOne.collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#accordion", :role => "tabpanel"}
-                .card-body
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            .card.accordions-light
-              #headingTwo.card-header{:role => "tab"}
-                %h5.mb-0
-                  %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseTwo"}
-                    Clean &amp; well coded
-              #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordion", :role => "tabpanel"}
-                .card-body
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            .card.accordions-light
-              #headingThree.card-header{:role => "tab"}
-                %h5.mb-0
-                  %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseThree"}
-                    Minimal to large
-              #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordion", :role => "tabpanel"}
-                .card-body
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          .space30
-        .col-lg-6.wow.animated.fadeIn{"data-wow-delay" => "0.4s"}
-          = image_tag 'single-2.png', class: 'img-fluid hidden-xs'
+    .row.vertical-align-child
+      .col-lg-6.wow.animated.fadeInUp{"data-wow-delay" => "0.2s"}
+        .space30
+        %h3.left-title Why Choose us?
+        #accordion{:role => "tablist"}
+          .card.accordions-light
+            #headingOne.card-header{:role => "tab"}
+              %h5.mb-0
+                %a{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-toggle" => "collapse", :href => "#collapseOne"}
+                  Latest Bootstrap4
+            #collapseOne.collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#accordion", :role => "tabpanel"}
+              .card-body
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          .card.accordions-light
+            #headingTwo.card-header{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseTwo"}
+                  Clean &amp; well coded
+            #collapseTwo.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordion", :role => "tabpanel"}
+              .card-body
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          .card.accordions-light
+            #headingThree.card-header{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapseThree"}
+                  Minimal to large
+            #collapseThree.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordion", :role => "tabpanel"}
+              .card-body
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        .space30
+      .col-lg-6.wow.animated.fadeIn{"data-wow-delay" => "0.4s"}
+        = image_tag 'single-2.png', class: 'img-fluid hidden-xs'
+
   .testimonials
     .container
       .center-title.margin-btm-50
@@ -621,7 +625,7 @@
               = image_tag 'work-6.jpg', class: 'img-fluid'
       %hr/
       .row
-        .col-lg-7
+        .col-lg-6
           %ul.list-inline
             %li.list-inline-item
               %a{:href => "#"} Home

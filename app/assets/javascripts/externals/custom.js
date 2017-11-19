@@ -42,65 +42,65 @@ $(document).ready(function () {
     return false;
   });
 
-  // //courses carousel
-  // $(".service-slider").owlCarousel({
-  //   loop: true,
-  //   margin: 10,
-  //   nav: false,
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
-  //     600: {
-  //       items: 2
-  //     },
-  //     1000: {
-  //       items: 3
-  //     }
-  //   }
-  // });
-  // //Projct carousel
-  // $(".project-slider").owlCarousel({
-  //   loop: true,
-  //   margin: 10,
-  //   nav: false,
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
-  //     600: {
-  //       items: 2
-  //     },
-  //     1000: {
-  //       items: 3
-  //     }
-  //   }
-  // });
-  // //Projct carousel
-  // $(".testi-slider").owlCarousel({
-  //   loop: true,
-  //   margin: 0,
-  //   nav: false,
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
-  //     600: {
-  //       items: 1
-  //     },
-  //     1000: {
-  //       items: 1
-  //     }
-  //   }
-  // });
-  // //wow animations
-  // var wow = new WOW(
-  //   {
-  //     boxClass: 'wow', // animated element css class (default is wow)
-  //     animateClass: 'animated', // animation css class (default is animated)
-  //     offset: 100, // distance to the element when triggering the animation (default is 0)
-  //     mobile: false        // trigger animations on mobile devices (true is default)
-  //   }
-  // );
-  // wow.init();
+  //courses carousel
+  $(".service-slider").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
+  });
+  //Projct carousel
+  $(".project-slider").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
+  });
+  //Projct carousel
+  $(".testi-slider").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+  //wow animations
+  var wow = new WOW(
+    {
+      boxClass: 'wow', // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset: 100, // distance to the element when triggering the animation (default is 0)
+      mobile: false        // trigger animations on mobile devices (true is default)
+    }
+  );
+  wow.init();
 });

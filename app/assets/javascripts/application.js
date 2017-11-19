@@ -15,4 +15,11 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
-//= require_tree .
+
+//= require externals/wow.min.js
+//= require externals/dzsparallaxer
+//= require externals/owl.carousel.min.js
+//= require externals/custom
+//= require externals/masterslider.js
+//= require externals/master-custom
+//= require externals/cube-portfolio.min.js
