@@ -7,7 +7,7 @@
 .ms-skin-default .ms-video-btn{
     width: 50px;
     height: 51px;
-    background: url(light-skin-1.png) no-repeat -14px -150px;
+    background: url(asset-path('light-skin-1.png')) no-repeat -14px -150px;
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;
@@ -16,7 +16,7 @@
 .ms-skin-default .ms-slide .ms-slide-vcbtn {
     width: 30px;
     height: 30px;
-    background: url(light-skin-1.png) no-repeat -24px -28px;
+    background: url(asset_path('light-skin-1.png')) no-repeat -24px -28px;
     top: 18px;
     right: 30px;
 }
@@ -26,7 +26,7 @@
 .ms-skin-default .ms-nav-next,
 .ms-skin-default .ms-nav-prev {
     width: 30px;
-    background: url(light-skin-1.png);
+    background: url(asset_path('light-skin-1.png'));
     background-position: -89px -26px;
     height: 40px;
     cursor: pointer;
@@ -47,7 +47,7 @@
 .ms-skin-default .ms-bullet {
     width: 10px;
     height: 10px;
-    background: url(light-skin-1.png) no-repeat;
+    background: url(asset_path('light-skin-1.png')) no-repeat;
     margin: 4px;
     background-position: -34px -117px;
 }
@@ -170,7 +170,7 @@ only screen and (                min-resolution: 2dppx) {
     .ms-skin-default .ms-nav-next,
     .ms-skin-default .ms-nav-prev,
     .ms-skin-default .ms-bullet{
-        background-image:url(light-skin-1-retina.png);
+        background-image:url('light-skin-1-retina.png');
         background-size: 152px 225px;
     }
 
