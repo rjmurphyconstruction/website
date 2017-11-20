@@ -1,6 +1,5 @@
 //default slider
-
-(function ($) {
+$(document).ready(function () {
   "use strict";
   var slider = new MasterSlider();
 
@@ -19,4 +18,4 @@
     instantStartLayers: true,
     autoplay: true
   });
-})(jQuery);
+});

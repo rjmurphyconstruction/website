@@ -3,7 +3,7 @@
  * 	Core css file
  */
 
-.master-slider{
+.master-slider {
     position: relative;
     visibility: hidden;
     -moz-transform: translate3d(0 , 0 , 0);
@@ -52,7 +52,7 @@
 .ms-slide .ms-slide-loading {
     width: 36px;
     height: 36px;
-    background: url('loading-2.gif') no-repeat center white;
+    background: url(asset-path('loading-2.gif')) no-repeat center white;
     border-radius: 60px;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
     position: absolute;
@@ -65,8 +65,8 @@
 
 /* grab cursor */
 .ms-no-swipe, .ms-def-cursor{cursor:auto !important;}
-.ms-grab-cursor{cursor: url('grab.png'), move;}
-.ms-grabbing-cursor{cursor: url('grabbing.png'), move;}
+.ms-grab-cursor{cursor: url(asset-path('grab.png')), move;}
+.ms-grabbing-cursor{cursor: url(asset-path('grabbing.png')), move;}
 .ms-ie .ms-grab-cursor{cursor: move;}
 .ms-ie .ms-grabbing-cursor {cursor: move;}
 
@@ -304,7 +304,7 @@
     font-family: sans-serif;
     font-size: 0.75em;
     display: inline-block;
-    background: url('video-close-btn.png') no-repeat 0px 3px;
+    background: url(asset-path('video-close-btn.png')) no-repeat 0px 3px;
     padding-left: 15px;
     height: 15px;
     color: #DBDBDB;
