@@ -79,23 +79,6 @@
     }
   }
 }
-/**youtube player**/
-.intro-ytp {
-  height: 100%;
-  width: 100%;
-  background: url('video-fallback.jpg') no-repeat center;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: block;
-  position: relative;
-}
-
 .video-text {
   position: absolute;
   width: 100%;
