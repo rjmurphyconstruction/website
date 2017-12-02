@@ -170,7 +170,7 @@ only screen and (                min-resolution: 2dppx) {
     .ms-skin-default .ms-nav-next,
     .ms-skin-default .ms-nav-prev,
     .ms-skin-default .ms-bullet{
-        background-image:url('light-skin-1-retina.png');
+        background-image: url(asset_path('light-skin-1-retina.png'));
         background-size: 152px 225px;
     }
 
