@@ -1,25 +1,5 @@
-/ navbar
-%nav.navbar.navbar-expand-lg.navbar-light.bg-white
-  .container
-    %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-      %span.navbar-toggler-icon
-    %a.navbar-brand{:href => "index.html"}
-      = image_tag 'logo.png', width: 200, height: 100
-    #navbar.navbar-collapse.collapse
-      %ul.nav.navbar-nav.ml-auto
-        %li.nav-item
-          %a.nav-link{:href => "#"} About
-        %li.nav-item
-          %a.nav-link{:href => "#"} Services
-        %li.nav-item
-          %a.nav-link{:href => "#"} Testimonials
-        %li.nav-item
-          %a.nav-link{:href => "#"} Company News
-        %li.nav-item
-          %a.nav-link{:href => "#"} Contact
-    / /.nav-collapse
-  / /.container
-/ /nav
+= render partial: 'shared/nav'
+
 / start master slider
 .clearfix
 .slider-main{:style => "overflow: hidden;"}
@@ -50,18 +30,7 @@
       %h5.ms-layer.sub-title2.full-wid.white.text-uppercase.text-center{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:0px; top: 330px;"} Lorem ipsum dolor sit amet.
     / end of slide
 / end Master Slider
-/ call to action
-.cta
-  .container
-    .row
-      .col-lg-9.wow.animated.fadeInDown{"data-wow-delay" => "0.2s"}
-        %h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        %p Donec sit amet vehicula ipsum, sit amet mollis ligula.
-      .col-lg-3.text-center.wow.animated.fadeInUp{"data-wow-delay" => "0.4s"}
-        %a.btn.btn-skin.btn-xl{:href => "#"}
-          Lorem ipsum
-          %i.ion-em
-/ end call to action
+
 .space80
 .container
   .row.vertical-align-child
