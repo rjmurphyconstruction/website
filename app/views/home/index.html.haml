@@ -4,7 +4,7 @@
     %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     %a.navbar-brand{:href => "index.html"}
-      = image_tag 'placeholder.png', width: 100, height: 50
+      = image_tag 'logo.png', width: 200, height: 100
     #navbar.navbar-collapse.collapse
       %ul.nav.navbar-nav.ml-auto
         %li.nav-item
@@ -200,133 +200,9 @@
     .col-lg-6.wow.animated.fadeIn{"data-wow-delay" => "0.4s"}
       = image_tag 'placeholder.png', class: 'img-fluid hidden-xs'
 
-.testimonials
-  .container
-    .center-title.margin-btm-50
-      %h1 Curabitur sodales
-      .border-width.center-align
-    .row
-      .col-lg-8.mr-auto.ml-auto.text-center
-        .testi-slider.owl-carousel.owl-theme
-          .item
-            %i.ion-quote
-            %p
-              "Pellentesque eleifend varius mauris, non pretium dui imperdiet eu."
-            %h5 John Doe
-          .item
-            %i.ion-quote
-            %p
-              "Nunc eleifend odio laoreet nunc feugiat mollis non sit amet nisl."
-            %h5 John Doe
-          .item
-            %i.ion-quote
-            %p
-              "Donec molestie mi nunc, sed imperdiet leo dictum porttitor."
-            %h5 John Doe
-/ end testimonials
-.space80
-.container
-  .center-title.margin-btm-50
-    %h1 Curabitur sodales
-    .border-width.center-align
-  .row
-    .col-lg-9.margin-btm-30
-      .row
-        .col-lg-6
-          .post.wow.animated.fadeInUp{"data-wow-delay" => "0.2s"}
-            %a{:href => "post.html"}
-              = image_tag 's1.jpg', class: 'img-fluid'
-            .space20
-            .post-meta
-              %h4
-                %a{:href => "#"} Post Title goes here
-              %ul.list-inline
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-person
-                    User
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-ios-clock
-                    12 May 2016
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-ios-chatbubble
-                    3 Comments
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-pound
-                    Interior
-            / post meta
-            .post-content
-              %p
-                Donec molestie mi nunc, sed imperdiet leo dictum porttitor. Cras nisl odio, congue eu lacinia vel, lacinia et diam.
-              %p.text-right
-                %a.btn.btn-link{:href => "#"} Read More...
-          / post end
-        .col-lg-6
-          .post.wow.animated.fadeInUp{"data-wow-delay" => "0.4s"}
-            %a{:href => "post.html"}
-              = image_tag 's2.jpg', class: 'img-fluid'
-            .space20
-            .post-meta
-              %h4
-                %a{:href => "#"} Post Title goes here
-              %ul.list-inline
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-person
-                    User
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-ios-clock
-                    12 May 2016
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-ios-chatbubble
-                    3 Comments
-                %li.list-inline-item
-                  %a{:href => "#"}
-                    %i.ion-pound
-                    Interior
-            / post meta
-            .post-content
-              %p
-                Donec molestie mi nunc, sed imperdiet leo dictum porttitor. Cras nisl odio, congue eu lacinia vel, lacinia et diam.
-              %p.text-right
-                %a.btn.btn-link{:href => "#"} Read More...
-          / post end
-    .col-lg-3
-      %ul.card-list.list-unstyled.wow.animated.fadeInUp{"data-wow-delay" => "0.6s"}
-        %li
-          %a{:href => "post.html"}
-            %h4 Voluptate velit esse quam nihil molestiae consequatur
-            %span
-              2 Days Ago
-              %em Interior
-        %li
-          %a{:href => "post.html"}
-            %h4 What the estimate time of house painting.
-            %span
-              2 Days Ago
-              %em Interior
-        %li
-          %a{:href => "post.html"}
-            %h4 Voluptate velit esse quam nihil molestiae consequatur
-            %span
-              2 Days Ago
-              %em Interior
-        %li
-          %a.btn.btn-link{:href => "blog.html"}
-            Read All news
-.space50
-.c_info_bar.wow.animated.fadeIn{"data-wow-delay" => "0.3s"}
-  .container
-    .row
-      .col-lg-12.text-center.margin-btm-30
-        %h4
-          %i.ion-ios-time
-          Monday - Saturday 9:AM - 6:PM / Sunday: Closed
+= render partial: 'shared/testimonials'
+
+= render partial: 'shared/hours'
 
 = render partial: 'shared/footer'
 
