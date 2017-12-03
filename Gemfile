@@ -20,6 +20,7 @@ gem 'haml', '~> 5.0'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails'
 gem 'figaro', '~> 1.1'
+gem 'mail_form', '~> 1.7'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

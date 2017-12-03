@@ -5,6 +5,24 @@
         %iframe.google-map{ allowfullscreen: '', frameborder: '0', height: '450', src: ENV['google_maps_url'], style: 'border: 0' }
       .col-lg-6
         %h3 Contact Us
+        .contact-form
+          = form_for @contact, url: contacts_path do |f|
+            .form-group
+              = f.label :name
+              %br/
+              = f.text_field :name, class: 'form-control', required: true
+
+            .form-group
+              = f.label :email
+              %br/
+              = f.email_field :email, class: 'form-control', required: true
+
+            .form-group
+              = f.label :message
+              %br/
+              = f.text_area :message, class: 'form-control', required: true
+
+            = f.submit 'Send Message', class: 'btn btn-success'
 
     %hr/
     .row
