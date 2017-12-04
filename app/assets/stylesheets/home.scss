@@ -4,8 +4,47 @@
   }
 }
 
+#testimonials {
+  .border-width {
+    background: white;
+  }
+
+  h5,
+  .ion-quote {
+    color: white;
+  }
+
+  span {
+    background-color: white;
+  }
+}
+
+#hours {
+  .c_info_bar {
+    background-color: #f5f5f5;
+  }
+}
+
 .footer {
   .google-map {
     width: 100%;
+  }
+
+  .bottom-row {
+    font-size: 24px;
+
+    a {
+      color: #777;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+#scroll-to-top {
+  .scrollToTop {
+    color: #777;
   }
 }

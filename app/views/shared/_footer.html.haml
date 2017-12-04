@@ -25,14 +25,15 @@
             = f.submit 'Send Message', class: 'btn btn-success'
 
     %hr/
-    .row
+    .row.bottom-row
       .col-lg-5
         %span © 2017. All Right Reserved.
       .col-lg-7
         %ul.text-right
           %li.list-inline-item
             %i.ion-ios-email
-            #{ENV['company_email']} /
+            %a{ href: "mailto:#{ENV['company_email']}" } #{ENV['company_email']}
+            %span /
           %li.list-inline-item
             %i.ion-android-call
             714-596-3500 /
