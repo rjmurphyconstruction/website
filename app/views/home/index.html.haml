@@ -1,35 +1,6 @@
 = render partial: 'shared/nav'
 
-/ start master slider
-.clearfix
-.slider-main{:style => "overflow: hidden;"}
-  / Master Slider
-  #masterslider.master-slider.ms-skin-default
-    / slide 1
-    .ms-slide.slide-1{"data-delay" => "14"}
-      / slide background
-      = image_tag 'blank.gif', data: { src: image_path('bg-1.jpg') }
-      %h3.ms-layer.sub-title3.text-center.white.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px; top:200px;"} Lorem ipsum dolor sit amet.
-      %h3.ms-layer.title2.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:150px;top: 260px;"} Lorem ipsum dolor sit amet.
-      %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:150px; top: 330px;"} Lorem ipsum dolor sit amet.
-    / end of slide
-    / slide 2
-    .ms-slide.slide-2{"data-delay" => "14"}
-      / slide background
-      = image_tag 'blank.gif', data: { src: image_path('bg-2.jpg') }
-      %h3.ms-layer.sub-title3.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px; top:205px;"} Lorem ipsum
-      %h3.ms-layer.title2.text-uppercase{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:110px;top: 260px;"} Lorem ipsum dolor sit amet.
-      %h5.ms-layer.sub-title2.text-uppercase{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:110px; top:330px;"} Lorem ipsum dolor sit amet.
-    / end of slide
-    / slide 1
-    .ms-slide.slide-2{"data-delay" => "14"}
-      / slide background
-      = image_tag 'blank.gif', data: { src: image_path('bg-3.jpg') }
-      %h3.ms-layer.sub-title2.full-wid.text-center.text-uppercase{"data-delay" => "1000", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0; top:200px;"} Lorem ipsum dolor sit amet.
-      %h3.ms-layer.title2.one.full-wid.font-sbold.white.text-uppercase.text-center{"data-delay" => "1500", "data-duration" => "2500", "data-ease" => "easeOutExpo", "data-effect" => "rotate3dtop(-100,0,0,40,t)", "data-type" => "text", :style => "left:0;top: 250px;"} Lorem ipsum dolor sit amet.
-      %h5.ms-layer.sub-title2.full-wid.white.text-uppercase.text-center{"data-delay" => "2000", "data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(45)", "data-type" => "text", :style => "left:0px; top: 330px;"} Lorem ipsum dolor sit amet.
-    / end of slide
-/ end Master Slider
+= render partial: 'shared/master_slider'
 
 = render partial: 'shared/about'
 
