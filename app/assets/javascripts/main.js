@@ -41,3 +41,12 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
 });
+
+// Alert Messages
+$(document).ready(function() {
+  setTimeout(function() {
+    $(".notice-alert-messages").fadeOut("slow", function() {
+      $(this).remove();
+    })
+  }, 3000 );
+});

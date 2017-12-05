@@ -42,3 +42,31 @@
     color: #777;
   }
 }
+
+.notice-alert-messages {
+  font-family: $base-font;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  #alert,
+  #notice {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+
+  #alert {
+    background: darkred;
+  }
+
+  #notice {
+    background: $skincolor;
+  }
+}
