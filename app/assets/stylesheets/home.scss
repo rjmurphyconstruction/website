@@ -26,17 +26,13 @@
 }
 
 .footer {
-  .google-map {
-    width: 100%;
-  }
+  .need-help {
+    font-size: 18px;
 
-  .bottom-row {
+    p,
     a {
-      color: #777;
-
-      &:hover {
-        color: white;
-      }
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
   }
 }

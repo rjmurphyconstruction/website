@@ -1,8 +1,20 @@
 %footer.footer#contact
   .container
     .row
-      .col-lg-6.margin-btm-30
-        %iframe.google-map{ allowfullscreen: '', frameborder: '0', height: '450', src: ENV['google_maps_url'], style: 'border: 0' }
+      .col-lg-6.margin-btm-30.need-help
+        %h3 Need Help?
+
+        %p
+          Call Us:
+          %br
+          %i.ion-android-call
+          714-596-3500
+        %p
+          Connect With Us:
+          %br
+          %br
+          %iframe{:allowtransparency => "true", :frameborder => "0", :height => "200", :scrolling => "no", :src => "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frjmcinc%2F&width=340&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1615538905355204", :style => "border:none;overflow:hidden", :width => "340"}
+
       .col-lg-6
         %h3 Contact Us
         .contact-form
@@ -28,15 +40,3 @@
     .row.bottom-row
       .col-lg-5
         %span © #{Time.now.year}. All Right Reserved.
-      .col-lg-7
-        %ul.text-right
-          %li.list-inline-item
-            %i.ion-ios-email
-            %a{ href: "mailto:#{ENV['company_email']}" } #{ENV['company_email']}
-            %span /
-          %li.list-inline-item
-            %i.ion-android-call
-            714-596-3500 /
-          %li.list-inline-item
-            %a{ href: 'https://www.facebook.com/rjmcinc/', target: '_blank' }
-              %i.ion-social-facebook
