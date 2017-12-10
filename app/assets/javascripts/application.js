@@ -26,3 +26,4 @@
 //= require externals/cube-portfolio.min.js
 
 //= require main
+//= require google_analytics
