@@ -92,7 +92,7 @@ Rails.application.configure do
   # Leverage browser caching
   config.public_file_server.headers = {
     'Cache-Control' => 'public, s-maxage=31536000, maxage=15552000',
-    'Expires' => 1.year.from_now.to_formatted_s(:rfc822).to_s
+    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
   }
 
   # Setup the mailer config
