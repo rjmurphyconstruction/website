@@ -4,7 +4,7 @@
 //= require popper
 //= require bootstrap
 //= require jquery.easing
-//= require externals/wow.min.js
+//= require wow
 //= require externals/dzsparallaxer
 //= require externals/owl.carousel.min.js
 //= require externals/custom
