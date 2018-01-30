@@ -1,0 +1,36 @@
+
+/*
+Accordions light
+*/
+.card.accordions-light {
+  margin-bottom: 10px;
+  border: 0px; }
+  .card.accordions-light .card-header {
+    background-color: transparent;
+    border-bottom: 0px;
+    padding-left: 40px;
+    position: relative;
+    padding: 0px; }
+    .card.accordions-light .card-header a {
+      padding: 10px 15px;
+      border-radius: 0px;
+      font-size: 18px;
+      display: block;
+      color: #fff;
+      background-color: $skincolor; }
+      .card.accordions-light .card-header a:before {
+         font-family: 'Ionicons';
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f3d8";
+    margin-right: 5px; }
+      .card.accordions-light .card-header a.collapsed {
+        background-color: #fff;
+        color: #999; }
+        .card.accordions-light .card-header a.collapsed:before {
+          font-family: 'Ionicons';
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     content: "\f3d0"; }

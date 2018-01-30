@@ -1,0 +1,79 @@
+/*
+Projects
+*/
+.cbp-l-grid-agency-desc{
+    font-family: $base-font;
+}
+.cbp-l-filters-text .cbp-filter-item{
+    font-family: $base-font;
+}
+.cbp-l-grid-agency-title{
+    font-family: $title-font;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.prject-box{
+    position:relative;
+    overflow:hidden;
+    display:block;
+    img{
+        @include transition(all 2s ease-in-out 0s);
+        opacity: 1;
+    }
+    .project-overlay{
+        position: absolute;
+        width: 96%;
+        height: 96%;
+        left: 2%;
+        top: 2%;
+        background-color: rgba(0,0,0,0.4);
+        opacity:0;
+        @include transition(all 0.3s);
+        h4{
+            color:#fff;
+            position: absolute;
+            bottom: -100%;
+            left: 20px;
+            font-weight: 600;
+            @include transition(all 0.4s);
+            i{
+                margin-left: 8px;
+            }
+        }
+    }
+    &:hover{
+        .project-overlay{
+            opacity: 1;
+            h4{
+                bottom: 20px;               
+            }
+        }
+        img{
+            @include transform(scale(1.3));
+            opacity: 0.7;
+        } 
+    }
+}
+.project-info{
+    li{
+        line-height: 40px;
+        vertical-align:middle;
+        margin:0;
+        padding:0px;
+        background: #f5f6f8;
+        margin-top:3px;
+        i{
+            display: inline-block;
+            vertical-align:middle;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background: $skincolor;
+            font-size: 25px;
+            line-height: 40px;
+            margin-right: 20px;
+            color: #fff;
+        }
+    }
+}

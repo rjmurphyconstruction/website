@@ -1,0 +1,24 @@
+
+/* 
+    tabs
+*/
+.tab-content{
+    padding-top: 30px;
+}
+.nav.nav-tabs>li.nav-item>a.nav-link{
+    border:0px;
+    color:#333;
+  @include border-radius(0px);
+    border-bottom: 2px solid transparent;
+    font-family: $title-font;
+    &:hover{
+        color:$skincolor;
+        border-bottom-color: $skincolor;
+        background-color: transparent;
+    }
+}
+.nav.nav-tabs>li.nav-item>a.nav-link.active, .nav-tabs>.nav-item>a.nav-link.active:focus, .nav-tabs>.nav-item>a.nav-link:hover{
+    border:0px;
+    color:$skincolor;
+    border-bottom:2px solid $skincolor;
+}

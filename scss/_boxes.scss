@@ -1,0 +1,68 @@
+/*
+card boxes
+*/
+
+.service-box{
+    .service-thumb{
+        position: relative;
+        overflow: hidden;
+    }
+    .service-desc{
+        padding: 15px;
+        background:#fff;
+        .border-width{
+            margin: 5px 0;
+        }
+        p{
+            margin-top: 10px;
+        }
+        h4{
+             font-weight: 500;
+        }
+    }
+}
+
+.icon-box{
+    .border-width{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    i{
+        color:  $skincolor;
+        float: left;
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        @include border-radius(50%);
+        border: 1px solid $skincolor;
+        display: block;
+        text-align: center;
+        &:before{
+            margin-left: 0px;
+            font-size: 40px;
+        }
+    }
+    .content{
+        overflow: hidden;
+        text-align: left;
+        h4{
+            font-weight: 500;
+        }
+    }
+}
+
+.support-info{
+    .col-sm-4{
+        text-align: center;
+    }
+    i{
+        color: $skincolor;
+        margin-bottom: 20px;
+        font-size: 30px;
+        display: block;
+        width: 100%;
+    }
+}
+
+

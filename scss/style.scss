@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_base.scss";
+@import "_buttons.scss";
+@import "_titles.scss";
+@import "_boxes.scss";
+@import "_cta.scss";
+@import "_topbar.scss";
+@import "_navbar.scss"; 
+@import "_dropdown.scss";
+@import "_form-elements.scss";
+@import "_slider.scss";
+@import "_sidebar.scss";
+@import "_tabs.scss";
+@import "_news.scss";
+@import "_staff.scss";
+@import "_accordions.scss";
+@import "_breadcrumb.scss";
+@import "_projects.scss";
+@import "_footer.scss";
+
+
+/**404**/
+.error-digit{
+    i{
+        display: block;
+        font-size: 100px;
+        line-height: 100px;
+        color: #ddd;
+        margin-bottom: 30px;
+    }
+}
+
+/**social**/
+.social{
+    li{
+        padding: 0px;
+        a{
+            margin: 5px;
+            color:#aeaeae;
+            font-size: 35px;
+            &:hover{
+                color: $skincolor;
+            }
+        }
+    }
+}
+
+/**static hero**/
+.hero-parallax{
+    position: relative;
+    overflow: hidden;
+    height:100%;
+    .hero-inner{
+        width: 100%;
+        height: 100%;
+        display: table;
+        position: relative;
+        .hero-content{
+            width: 100%;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            h1{
+                color:#fff;
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 50px;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+            }
+            p{
+                color:#fff;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+/**youtube player**/
+.intro-ytp {
+    height: 100%;
+    width: 100%;
+    background: url(../images/video-fallback.jpg) no-repeat center;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+
+.video-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.video-text .video-content {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.video-text .video-content .video-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.video-text .video-content .video-inner h5 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+}
+.video-text .video-content .video-inner h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.video-text .video-content .video-inner p {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/****Responsive css**/
+@media(max-width:991px){
+    .top-bar{
+        display: none;
+    }
+    .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid{
+        position: relative;
+    }
+    .navbar-toggler{
+        position: absolute;
+        right: 0;
+        top: 3px;
+        padding: 0px;
+        border: 0px;
+    }
+    .hero-banner .hero-overlay .hero-inner .hero-content h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .hero-banner .hero-overlay .hero-inner .hero-content{
+        p{
+            font-size: 13px;
+            line-height: 22px;
+        }
+    }
+    .hero-banner .hero-overlay .hero-inner .hero-content .btn-xl{
+        padding: 6px 12px;
+    }
+    .top-bar .text-right{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .search-form {
+        padding: 0px 15px;
+        background-color: transparent;
+        width:100%;
+    }
+    .cta{
+        text-align: center;
+    }
+    .space100{
+        height: 70px;
+    }
+    .landing-hero{
+        margin-top:49px;
+    }
+    body.one-page .navbar-transparent{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: #222!important;
+    }
+    .dropdown-menu{
+        border: 0px;
+    }
+    .search-form {
+        position: absolute;
+        right: auto;
+        width: 100%;
+        top: 100%;
+        padding: 5px;
+        background-color: #e1e1e1;
+        z-index: 9;
+    }
+    .dropdown-menu > .dropdown-item,.dropdown-menu > li > a{
+        border-bottom: 0px!important;
+    }
+    .dropdown-submenu .dropdown-menu{
+        padding-left: 30px;
+        display: block;
+    }
+    .video-text .video-content .video-inner h2{
+        font-size: 2rem;
+        letter-spacing: 0px;
+    }
+    .page-title h2{
+        letter-spacing: 0px;
+        font-size: 20px;
+        margin: 0px;
+    }
+}

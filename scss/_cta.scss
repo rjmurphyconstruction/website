@@ -1,0 +1,59 @@
+/*
+Call to actions
+*/
+.cta{
+    padding: 40px 0;
+    background: #f5f5f5;
+    .btn{
+        margin-top: 10px;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    h3{
+        font-size: 30px;
+    }
+}
+.newsletter{
+    background-color: #f5f6f8;
+    padding: 40px 0;
+    
+    .b-newsletter{
+        margin-top: 10px;
+        position: relative;
+        .form-control{
+        height: 45px;
+        border-color:transparent;
+        background-color:#fff;
+        @include box-shadow(none);
+        &.success{
+            border-color: #2b542c;
+        }
+          &.error{
+            border-color: #FC3116;
+        }
+        }
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+          width:50px;
+          height: 45px;
+          background: transparent;
+          border: 0px;
+          color:$skincolor;
+          font-size: 30px;
+        }
+    }
+}
+.c_info_bar{
+    padding-top: 30px;
+    background:  $skincolor;
+    h4{
+        margin-bottom: 0px;
+        font-size:25px;
+        i{
+            margin-right: 15px;
+        }
+    }
+}

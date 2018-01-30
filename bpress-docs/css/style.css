@@ -1,0 +1,53 @@
+/*
+Bpress docs
+Author: Design_mylife
+*/
+body,html{
+    height: 100%;
+}
+body{
+    color:#777;
+}
+.sidenav{
+    height: 100%;
+    width: 270px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+.sidenav li a{
+    display: block;
+    padding: 7px 10px;
+    color:#fff;
+    text-decoration: none;
+}
+.content-wrapper{
+    width:100%;
+    padding:30px 15px;
+    padding-left:285px;
+    min-height: 100vh;
+}
+.logo{
+    padding-bottom: 30px;
+}
+@media(max-width:991px){
+    .sidenav{
+        height: auto;
+        width: 100%;
+        padding: 0px;
+        line-height: 40px;
+        padding-bottom: 0px;
+    }
+    .sidenav li{
+        float: left;
+    }
+    .logo{
+        padding: 0px;
+    }
+    .content-wrapper{
+        padding-left: 15px;
+        padding-top: 70px;
+    }
+}
