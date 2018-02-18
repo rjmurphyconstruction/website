@@ -1,0 +1,9 @@
+#services .img-fluid {
+  height: 300px;
+}
+.need-help {
+  font-size: 18px;
+}
+.need-help p, .need-help i, .hours {
+  color: white;
+}
