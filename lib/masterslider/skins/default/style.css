@@ -1,0 +1,67 @@
+.ms-skin-default .ms-slide .ms-slide-vpbtn,
+.ms-skin-default .ms-video-btn{
+	width: 50px;
+	height: 51px;
+	background: url(light-skin-1.png) no-repeat -14px -150px;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+}
+.ms-skin-default .ms-slide .ms-slide-vcbtn {
+	width: 30px;
+	height: 30px;
+	background: url(light-skin-1.png) no-repeat -24px -28px;
+	top: 18px;
+	right: 30px;
+}
+.ms-skin-default .ms-nav-next,
+.ms-skin-default .ms-nav-prev {
+	width: 30px;
+	background: url(light-skin-1.png);
+	background-position: -89px -26px;
+	height: 40px;
+	cursor: pointer;
+	top: 50%;
+	left: 30px;
+	margin-top: -20px;
+	position: absolute;
+	z-index: 110;
+}
+.ms-skin-default .ms-nav-next {
+	right: 30px;
+	left: auto;
+	background-position: -89px -103px;
+}
+.ms-skin-default .ms-bullet {
+	width: 10px;
+	height: 10px;
+	background: url(light-skin-1.png) no-repeat;
+	margin: 4px;
+	background-position: -34px -117px;
+}
+.ms-skin-default .ms-bullet-selected {
+	background-position: -34px -84px;
+}
+.ms-skin-default .ms-time-bar {
+	height: 3px;
+	background: #FFFFFF;
+	border-top: solid 1px rgba(0, 0, 0, 0.41);
+}
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	.ms-skin-default .ms-slide .ms-slide-vpbtn,
+	.ms-skin-default .ms-video-btn,
+	.ms-skin-default .ms-slide .ms-slide-vcbtn,
+	.ms-skin-default .ms-nav-next,
+	.ms-skin-default .ms-nav-prev,
+	.ms-skin-default .ms-bullet{
+		background-image:url(light-skin-1-retina.png);
+		background-size: 152px 225px;
+	}
+}
