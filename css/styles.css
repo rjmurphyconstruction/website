@@ -1,3 +1,6 @@
+.navbar-brand img {
+  margin: 25px;
+}
 #services .img-fluid {
   height: 300px;
 }
