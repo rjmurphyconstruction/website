@@ -33,7 +33,7 @@
   slider.control('bullets');
   slider.setup('masterslider', {
     width: 1600,
-    height: 750,
+    height: 700,
     space: 0,
     layout: 'fullwidth',
     fillMode: 'stretch',
