@@ -32,10 +32,11 @@
   slider.control('timebar', {insertTo: '#masterslider'});
   slider.control('bullets');
   slider.setup('masterslider', {
-    width: 1400,
-    height: 600,
+    width: 1600,
+    height: 750,
     space: 0,
     layout: 'fullwidth',
+    fillMode: 'stretch',
     loop: true,
     preload: 0,
     instantStartLayers: true,
