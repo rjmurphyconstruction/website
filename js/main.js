@@ -36,7 +36,7 @@
     height: 700,
     space: 0,
     layout: 'fullwidth',
-    fillMode: 'stretch',
+    fillMode: 'fit',
     loop: true,
     preload: 0,
     instantStartLayers: true,
